@@ -19,8 +19,8 @@
 	// );
 
 
-    $myPDO = new PDO('pgsql:host=ec2-54-235-90-107.compute-1.amazonaws.com;dbname=dkf3l4nu5m7vj', 'qbxcasondnmcds', '0b12931d71c65eee9a2fa303bcd8c1b460ff1878e7d0cc9f0c10a0ad563a85bc');
-    $result = $myPDO->query("SELECT * FROM Users");
+    $myPDO = pg_connect('host=ec2-54-235-90-107.compute-1.amazonaws.com dbname=dkf3l4nu5m7vj user=qbxcasondnmcds password=0b12931d71c65eee9a2fa303bcd8c1b460ff1878e7d0cc9f0c10a0ad563a85bc');
+    $result = $myPDO->pg_query("SELECT * FROM Users");
 
 
 	if(mysqli_num_rows($result) > 0 )
