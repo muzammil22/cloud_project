@@ -1,14 +1,4 @@
-<?php ?>
-<!DOCTYPE html>
-<html>
-  <head>
 
-  </head>
-
-  <body>
-
-    <h1>Hello world</h1>   
-    
     <?php
 	
   //    $dbopts = parse_url(getenv('DATABASE_URL'));
@@ -34,7 +24,3 @@
 		}
 
 	?>
-
-    
-  </body>
-</html>
