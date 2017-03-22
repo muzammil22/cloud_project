@@ -11,7 +11,7 @@
 	 );
 	echo 'muzammil';
 
-		$st = $app['pdo']->prepare('SELECT name FROM test_table');
+		$st = $app['pdo']->prepare('SELECT * FROM Users');
 	  $st->execute();
 
 	  $names = array();
